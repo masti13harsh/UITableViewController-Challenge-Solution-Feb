@@ -58,12 +58,15 @@
     // Configure the cell...
     if(indexPath.section == 0) {
         cell.textLabel.text = @"I am in section 0";
+        cell.textColor = [UIColor redColor];
     }
     if(indexPath.section == 1) {
         cell.textLabel.text = @"Another section";
+        cell.textColor = [UIColor blueColor];
     }
     if(indexPath.section == 2) {
         cell.textLabel.text = [NSString stringWithFormat:@"Cell - %i", indexPath.row];
+        cell.textColor = [UIColor yellowColor];
     }
     return cell;
 }
